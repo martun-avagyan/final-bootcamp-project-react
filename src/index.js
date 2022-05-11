@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Auth from "./pages/auth/Auth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,8 +13,7 @@ root.render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />} />
-				<Route path="categories/sthg" element={<Expenses />} />
-				<Route path="invoices" element={<Invoices />} />
+				<Route path="auth" element={Auth}></Route>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
