@@ -3,10 +3,11 @@ import "./App.css";
 
 function App() {
 	return (
-		<div className="App">
-            Hello
-		</div>
+		<h1 className="App">
+            Home
+		</h1>
 	);
 }
 
 export default App;
+ 
