@@ -1,3 +1,11 @@
-.product-image--main{
+.item-image--main{
     height: 10rem
+}
+.item-images--container{
+    display: flex;
+}
+
+.item-image--options{
+    display: flex;
+    height: 5rem;
 }
