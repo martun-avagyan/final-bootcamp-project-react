@@ -1,13 +1,12 @@
-import React from "react";
-import register from "../helpers/register";
+import React from 'react'
 import { useState } from "react";
-;
-export default function SignUp() {
+import login from "../helpers/login";
+export default function LogIn() {
     const [email, setEmail] = useState(``)
     const [password, setPassword] = useState(``)
      return (
     <>
-    SignUp<br></br>
+    LogIn<br></br>
       <label htmlFor="email">Email</label>
       <input onChange={(input) => setEmail(input.target.value)} type="text" name="email" placeholder="Please enter your email" />
       <label htmlFor="password">Password</label>
@@ -17,7 +16,7 @@ export default function SignUp() {
         placeholder="Please enter your password"
       />
       
-      <button onClick={() => register(email, password)}>Register</button>
+      <button onClick={() => login(email, password)}>Login</button>
     </>
   );
 }
