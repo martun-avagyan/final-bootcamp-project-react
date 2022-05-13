@@ -3,6 +3,7 @@ import "./App.css";
 import SignUp from "./components/SignUp";
 import Login from "./components/LogIn";
 import setStorage from "./helpers/setStorage";
+import Logout from "./components/Logout";
 import { auth } from "./api/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 function App() {
@@ -12,7 +13,9 @@ function App() {
   return (
     <>
       <h1 className="App">Home</h1>
-      <SignUp /><br></br>
+      <Logout />
+      <SignUp />
+      <br></br>
       <Login />
     </>
   );
