@@ -2,10 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import Auth from "./pages/auth/Auth";
+import SignIn from "./pages/sign-in";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,11 +12,10 @@ root.render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />} />
-				<Route path="auth" element={Auth}></Route>
+				<Route path="sign-in" element={<SignIn/>}></Route>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
 );
 
 
-reportWebVitals();
