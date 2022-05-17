@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
-import ItemMainImages from "./components/itemMainImages/ItemMainImages";
+import SingleProductItem from "./components/singleProductItem/SingleProductItem";
 function App() {
 	return (
 		<h1 className="App">
-            Home
-			<ItemMainImages/>
-
-
+			<SingleProductItem/>
 		</h1>
 	);
 }

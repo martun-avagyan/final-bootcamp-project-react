@@ -21,7 +21,9 @@
         "indent": [
             "error",
             "tab"
+            
         ],
+        "no-unused-vars": "off",
        
     
         "quotes": [

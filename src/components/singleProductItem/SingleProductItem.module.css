@@ -1,0 +1,25 @@
+.singleProductItemContainer{
+    display: flex;
+    width: 100%;
+}
+
+.imageLeftSlider{
+    height: 3rem;
+    width: 3rem;
+ border: 2px black solid;
+ margin-bottom: 40px;
+}
+
+.imageLeftSlider img{
+    height: auto;
+    width: 100%;
+}
+
+.singleProductImageSlider{
+    display: flex;
+}
+
+.mainImage img{
+    height: auto;
+    width: 30rem;
+}
