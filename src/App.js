@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
+import Home from "./pages/home/Home";
 
 function App() {
 	return (
-		<h1 className="App">
-            Home
-		</h1>
+		<div className="App">
+			<Home />
+		</div>
 	);
 }
 
 export default App;
- 
