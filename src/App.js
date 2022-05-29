@@ -6,17 +6,19 @@ import setStorage from "./helpers/setStorage";
 import Logout from "./components/Logout";
 import { auth } from "./api/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   onAuthStateChanged(auth, (currentUser) => {
     currentUser ? setStorage(currentUser.uid) : setStorage(false);
   });
   return (
     <>
-      <h1 className="App">Home</h1>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
+      </Routes>
       <Logout />
-      <SignUp />
-      <br></br>
-      <Login />
     </>
   );
 }

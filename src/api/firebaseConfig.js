@@ -2,12 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyBiZHLStyGolusjo-70z9SKJqbDPwxu4Vg",
-  authDomain: "best-shop-77fb0.firebaseapp.com",
-  projectId: "best-shop-77fb0",
-  storageBucket: "best-shop-77fb0.appspot.com",
-  messagingSenderId: "276674489033",
-  appId: "1:276674489033:web:e02cfa9151645054917b18",
+  apiKey: "AIzaSyDAwqj0a-jOCzH_KnOjqzfSZXKonuOXVGA",
+  authDomain: "aca-finals.firebaseapp.com",
+  projectId: "aca-finals",
+  storageBucket: "aca-finals.appspot.com",
+  messagingSenderId: "575141585152",
+  appId: "1:575141585152:web:bfd3a80db246c39521d3e5",
+  measurementId: "G-CFG6975GTW"
 };
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);  
