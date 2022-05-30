@@ -7,15 +7,17 @@ import image6 from "../../Assets/ShopItems/Colorized/SVG/Asset 20.svg";
 import image7 from "../../Assets/ShopItems/Colorized/SVG/Asset 21.svg";
 import image8 from "../../Assets/ShopItems/Colorized/SVG/Asset 22.svg";
 
-const selectorData = [
-	image1,
-	image2, 
-	image3, 
-	image4, 
-	image5, 
-	image6, 
-	image7,
-	image8,
-];
+function selectorData() {
+	return ([
+		image1,
+		image2, 
+		image3, 
+		image4, 
+		image5, 
+		image6, 
+		image7,
+		image8,
+	]);
+}
 
 export default selectorData;

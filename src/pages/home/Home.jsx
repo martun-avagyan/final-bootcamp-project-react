@@ -16,6 +16,13 @@ function Home() {
 			window.removeEventListener("scroll", listenToScroll); 
 	}, []);
 
+	React.useEffect(() => {
+		return (() => {
+			console.log(isVisible);
+		});
+	}, [isVisible]);
+	
+
 	const listenToScroll = () => {
 		let heightToHideFrom = 42;
 		const winScroll = document.body.scrollTop || 
@@ -33,6 +40,7 @@ function Home() {
 		<div>
 			<Nav />
 			{height}
+			{!isVisible && "Here Must Be Search Component"};
 			{isVisible && <ItemSelector />}
 			<Slider />
 			<Board />

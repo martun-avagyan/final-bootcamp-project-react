@@ -10,11 +10,7 @@ function ItemSelector() {
 
 	function mood(id) {
 		setImageSelectorData(imageSelectorData.map((image) => {
-			if(image.id === id) {
-				return id;
-			} else {
-				return image;
-			}
+			return image.id === id ? id : image;
 		}));
 	}
 
