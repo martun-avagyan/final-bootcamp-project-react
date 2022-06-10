@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./styles.module.css"
+import StyledCard from "./Card.styled";
 
-export default function Card ({url}) {
+export default function Card (url) {
 	return (
-		<div className={styles.card}>
-    	<img width="140px" height="140 px" src={url} alt="unsolved"></img>
-  	</div>
-	)
-};
+		<StyledCard>
+			<img width="140px" height="140 px" src={url.url} alt="unsolved"></img>
+		</StyledCard>
+	);
+}

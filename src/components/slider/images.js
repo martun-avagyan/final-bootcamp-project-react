@@ -28,6 +28,6 @@ const carouselData = [
 	image12, 
 	image13, 
 	image14,
-]
+];
 
 export default carouselData;
