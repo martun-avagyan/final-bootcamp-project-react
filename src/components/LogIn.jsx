@@ -23,6 +23,6 @@ export default function LogIn() {
       />
       <button onClick={() => login(email, password)}>Login</button>
      
-    </>
-  );
+		</>
+	);
 }
